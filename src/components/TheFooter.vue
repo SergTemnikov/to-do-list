@@ -1,6 +1,8 @@
 <template>
   <v-footer
+    app
     padless
+    color="#052555"
   >
     <v-row
       justify="center"
@@ -10,18 +12,13 @@
         v-for="path in $options.Paths"
         :key="path.id"
         text
+        color="white"
         rounded
         class="my-2"
         :href="path.url"
       >
         {{ path.name }}
       </v-btn>
-      <v-col
-        class="text-center"
-        cols="12"
-      >
-        {{ new Date().getFullYear() }} — <strong>TO-DO-LIST, Temnikov S. (c)</strong>
-      </v-col>
     </v-row>
   </v-footer>
 </template>

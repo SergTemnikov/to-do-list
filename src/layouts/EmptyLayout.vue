@@ -1,6 +1,5 @@
 <template>
   <v-app>
-    <AppBar />
     <v-main>
       <v-container fluid>
         <slot></slot>
@@ -13,11 +12,9 @@
 
 <script>
 import TheFooter from '@/components/TheFooter.vue'
-import AppBar from '@/components/AppBar.vue'
 export default {
   components: {
-    TheFooter,
-    AppBar
+    TheFooter
   }
 }
 </script>
