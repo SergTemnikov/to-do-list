@@ -10,6 +10,12 @@ const routes = [
     name: 'about',
     component: () => import('@/pages/page-about/PageAbout.vue'),
     meta: { layout: 'DefaultLayout' }
+  },
+  {
+    path: '/dashboard',
+    name: 'dashboard',
+    component: () => import('@/pages/page-dashboard/PageDashboard.vue'),
+    meta: { layout: 'DefaultLayout' }
   }
 ]
 
