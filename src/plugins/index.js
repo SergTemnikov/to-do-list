@@ -1,0 +1,2 @@
+import './vuelidate'
+import './vuetify'

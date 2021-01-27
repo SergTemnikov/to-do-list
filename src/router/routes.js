@@ -15,7 +15,13 @@ const routes = [
     path: '/dashboard',
     name: 'dashboard',
     component: () => import('@/pages/page-dashboard/PageDashboard.vue'),
-    meta: { layout: 'DefaultLayout', name: 'Доска' }
+    meta: { layout: 'DefaultLayout', name: 'Редактор' }
+  },
+  {
+    path: '/list',
+    name: 'list',
+    component: () => import('@/pages/page-list/PageList.vue'),
+    meta: { layout: 'DefaultLayout', name: 'Задачи и заметки' }
   },
   {
     path: '/sign-in',

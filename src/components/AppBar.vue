@@ -9,6 +9,8 @@
 
       <v-toolbar-title>{{ pageTitle }}</v-toolbar-title>
       <v-spacer></v-spacer>
+      <v-img src="public/favicon.ico"/>
+      <v-spacer></v-spacer>
       <v-btn type="submit" color="#F6522E">Выйти</v-btn>
     </v-app-bar>
 
@@ -35,7 +37,14 @@
             <v-list-item-icon>
               <v-icon>mdi-view-dashboard</v-icon>
             </v-list-item-icon>
-            <v-list-item-title>Доска</v-list-item-title>
+            <v-list-item-title>Редактор</v-list-item-title>
+          </v-list-item>
+
+          <v-list-item href="/list">
+            <v-list-item-icon>
+              <v-icon>mdi-view-dashboard</v-icon>
+            </v-list-item-icon>
+            <v-list-item-title>Задачи и заметки</v-list-item-title>
           </v-list-item>
 
           <v-list-item href="/sign-in">
